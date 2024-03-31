@@ -186,8 +186,6 @@ class TestSignupView(TestCase):
         self.assertFalse(User.objects.filter(username=invalid_data["username"]).exists())
 
 
-#     def test_failure_post_with_empty_form(self):
-
 #     def test_failure_post_with_empty_username(self):
 
 #     def test_failure_post_with_empty_email(self):
