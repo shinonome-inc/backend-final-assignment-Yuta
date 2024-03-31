@@ -17,7 +17,3 @@ class SignupView(CreateView):
         user = authenticate(self.request, username=username, passward=password)
         login(self.request, user)
         return response
-
-
-class UserProfileView(LoginRequiredMixin, TemplateView):
-    template_name = "accounts/profile.html"
