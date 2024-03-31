@@ -18,4 +18,5 @@ class SignupView(CreateView):
         login(self.request, user)
         return response
 
+
 # githubへのpushミス
