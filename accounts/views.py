@@ -19,4 +19,5 @@ class SignupView(CreateView):
         return response
 
 
-# e
+class UserProfileView(LoginRequiredMixin, TemplateView):
+    template_name = "accounts/profile.html"
